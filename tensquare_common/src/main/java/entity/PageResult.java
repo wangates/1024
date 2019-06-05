@@ -1,13 +1,14 @@
 package entity;
 
-public class PageResult <t>{
+import java.util.List;
+public class PageResult <T>{
     private long total;
-    private List<t> rows;
+    private List<T> rows;
 
     public PageResult() {
     }
 
-    public PageResult(long total, List<t> rows) {
+    public PageResult(long total, List<T> rows) {
         this.total = total;
         this.rows = rows;
     }
@@ -20,11 +21,11 @@ public class PageResult <t>{
         this.total = total;
     }
 
-    public List<t> getRows() {
+    public List<T> getRows() {
         return rows;
     }
 
-    public void setRows(List<t> rows) {
+    public void setRows(List<T> rows) {
         this.rows = rows;
     }
 }
